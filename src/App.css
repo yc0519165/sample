@@ -1,0 +1,16 @@
+.head{
+  font-size: 40px;
+  font-weight: 400;
+  margin: 15px;
+  margin-bottom:20px ;
+}
+.addbtn{
+  width: 70px;
+}
+.row{
+  margin: 15px;
+  text-align: left;
+}
+input{
+  width: 100%;
+}
