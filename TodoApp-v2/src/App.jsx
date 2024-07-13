@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
 import TodoName from "./components/TodoName"
 import TodoItems from "./components/TodoItems"
+import AddTodo from "./components/AddTodo"
 
 function App() {
   const todoItems = [
@@ -22,6 +23,7 @@ function App() {
   return (
     <center className='container'>
       <TodoName></TodoName>
+      <AddTodo></AddTodo>
       <TodoItems todoItems={todoItems}></TodoItems>
 
     </center>
