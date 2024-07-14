@@ -1,12 +1,11 @@
 import Item from "./Item"
-
-const ListItem = () =>{
-  let names = ['Mercedes Benz','Lamobrgini','B M W','T A T A','Huyndai','Walswalgan','Mahindra','Skoda']
+import styles from './Item.module.css'
+const ListItem = ({items}) =>{
 
   return  (
     <>
-    <ul className='list-group'>
-    {names.map ((car) =>
+    <ul className={`${styles.group} list-group`}>
+    {items.map ((car) =>
     <Item key={car} names={car}></Item>
     )}
     </ul>

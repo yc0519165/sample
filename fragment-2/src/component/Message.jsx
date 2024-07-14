@@ -1,7 +1,8 @@
-const Message = () =>{
+import styles from './Message.module.css'
+const Message = ({items}) =>{
 
-  return( name.length ===0 && <h3>I am Still
-     Hungry</h3>
+  return( items.length ===0 && <h3 className={styles.error}>I am Still
+     Hungry..!</h3>
   )
 }
 export default Message

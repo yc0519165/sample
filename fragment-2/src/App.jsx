@@ -6,7 +6,7 @@ import Message from './component/Message'
 
 function App() {
 
-  let names = ['Mercedes Benz','Lamobrgini','B M W','T A T A','Huyndai','Walswalgan','Mahindra','Skoda']
+  let names = ['ferrari','Mercedes Benz','Lamobrgini','B M W','T A T A','Huyndai','Walswalgan','Mahindra','Skoda']
 
   return (
     <>

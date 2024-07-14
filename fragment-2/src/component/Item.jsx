@@ -1,5 +1,5 @@
-
+import styles from './Item.module.css'
 const Item = ({names}) =>{
-  return  <li className="list-group-item Itms">{names}</li>
+  return  <li className= {`${styles.Item} list-group-item `}>{names}</li>
 }
 export default Item;
