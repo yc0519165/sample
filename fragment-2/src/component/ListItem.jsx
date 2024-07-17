@@ -1,5 +1,5 @@
 import Item from "./Item"
-import styles from './Item.module.css'
+import styles from './ListItem.module.css'
 const ListItem = ({items}) =>{
 
   return  (
