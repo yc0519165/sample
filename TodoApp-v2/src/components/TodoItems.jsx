@@ -2,11 +2,10 @@ import TodoItem from "./TodoItem"
 
 const TodoItems = ( {todoItems} ) => {
   return (<div className="row">
-  {todoItems.map((item) =>{
-  <TodoItem todoName={item.name} todoDate={item.dueDate}></TodoItem>
-  })}
+  {todoItems.map((item) => (<TodoItem key={item}  todoDate={item.dueDate} todoName={item.name}></TodoItem>
+  ))}
   
   </div>
   )
 }
-export default TodoItems
+export default TodoItems;

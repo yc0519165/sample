@@ -17,6 +17,10 @@ function App() {
     {
       name:'Go to GYM',
       dueDate:'21/07/2002',
+    },
+    {
+      name:'Like focus your skill',
+      dueDate:'21/07/2024',
     }
   ]
 
