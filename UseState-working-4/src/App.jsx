@@ -5,15 +5,21 @@ import Heading from './component/Heading';
 import Display from './component/Display';
 import Message from './component/Message';
 import ListItems from './component/ListItems';
+import { useState } from 'react'
+
 
 
 function App() {
 
-  const city = ['Mumbai', 'Pune', 'Nasik', 'Jalgoan', 'Sambhaji Nagar', 'AhilyaNager']
-
   // const city =[]
+  const [city, setCity] = useState([ ])
 
   const screen = (event) =>{
+    if(event.key === 'Enter'){
+      const newCity = (event.target.value)
+      const cit = [...city, newCity]
+      setCity(cit)
+    }
     console.log(event.target.value)
   }
 

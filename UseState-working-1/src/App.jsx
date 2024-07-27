@@ -15,10 +15,10 @@ function App() {
 
   let onChanged = (event) =>{
     if(event.key === 'Enter'){
-      let newCountry = (event.target.value);
+      let newCountry = (event.target.value)
       let cou = [...countryName, newCountry]
       setCountry(cou)
-      console.log(`add new country ${newCountry}`)
+      console.log(`add new country ${newCountry}`);
     }
     // console.log(event.target.value)
   }
