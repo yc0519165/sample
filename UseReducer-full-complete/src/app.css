@@ -1,0 +1,16 @@
+centre{
+  margin: 10px;
+}
+h1{
+  margin: 10px;
+  margin-bottom: 20px;
+  left: 25px;
+}
+.button{
+  width: 72px;
+}
+.row{
+  margin-bottom: 15px;
+  width: 100%;
+  margin-right: 20px;
+}
