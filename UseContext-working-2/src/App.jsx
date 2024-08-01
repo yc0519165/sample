@@ -3,11 +3,12 @@ import AddTodo from "./components/AddTodo";
 import TodoItems from "./components/TodoItems";
 import "bootstrap/dist/css/bootstrap.min.css"
 import './app.css'
-import { useState } from "react";
 import WelcomeMessage from "./components/WelcomeMessage";
+import { useState } from "react";
+import { TodoItemContex } from "./store/item-store";
 
 
-function APP (){
+function App (){
 
   const [todoItems, setTodoItems] = useState([])
 
@@ -23,17 +24,24 @@ function APP (){
     setTodoItems(newTodoItem);
   }
   
+  // const defaultTodoList = {name: 'itemName', dueDate: 'itemDueDate'}
 
   return (
-    
+    <TodoItemContex.Provider value = {{
+      todoItems,
+      handleNemItem,
+      onDeleteClick : handleDeleteItem
+    }}>
+
   <center>
     <AppName></AppName>
-    <AddTodo handleNemItem={handleNemItem}></AddTodo>
-    <WelcomeMessage todoItems={todoItems} ></WelcomeMessage>
-    <TodoItems todoItems={todoItems}
-    onDeleteClick={handleDeleteItem}></TodoItems>
+    <AddTodo ></AddTodo>
+    <WelcomeMessage ></WelcomeMessage>
+    <TodoItems 
+    ></TodoItems>
   </center>
+  </TodoItemContex.Provider>
   )
 }
 
-export default APP ;
+export default App ;

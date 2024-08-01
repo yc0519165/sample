@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { TodoListContext } from "../store/todo-item-store"
 
 
-const AddTodo = ({handleNemItem}) => {
+const AddTodo = () => {
+
+  const { handleNemItem } = useContext(TodoListContext)
 
   const [todoName, setTodoName] = useState("")
   const [dueDate, setDueDate] = useState ("")
@@ -18,7 +21,7 @@ const AddTodo = ({handleNemItem}) => {
     setDueDate("");
 
   }
-  return (
+  return ( 
     <div className="row">
     <div className="col-4"><input type="text" placeholder="Enter Todo here" value={todoName} onChange={handleNameChange}/></div>
     <div className="col-2"><input type="date" value={dueDate} onChange={handleDateChange}/></div>

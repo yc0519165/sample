@@ -11,7 +11,7 @@ function TodoItem( {todoName, todoDate }) {
       <button type="button" className="btn btn-danger"
       onClick={() => deleteItem(todoName)}>Delete</button>
     </div>
-     </div>
+     </div> 
 
 
     

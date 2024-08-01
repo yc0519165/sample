@@ -3,6 +3,7 @@ import { TodoItemsContex } from "../store/todo-item-store"
 
 
 const AddTodo = () => {
+  
   const {addNemItem} = useContext(TodoItemsContex)
 
   const [todoName, setTodoName] = useState("")
@@ -18,7 +19,7 @@ const AddTodo = () => {
     addNemItem(todoName,dueDate)
     setTodoName("");
     setDueDate("");
-
+ 
   }
   return (
     <div className="row">

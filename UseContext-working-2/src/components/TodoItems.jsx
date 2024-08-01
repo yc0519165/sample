@@ -1,7 +1,11 @@
+import { useContext } from "react"
 import TodoItem from "./TodoItem"
+import { TodoItemContex } from "../store/item-store"
 
-const TodoItems = ({todoItems, onDeleteClick}) => {
+const TodoItems = () => {
 
+  const { todoItems } =useContext(TodoItemContex)
+  const { onDeleteClick } = useContext(TodoItemContex)
 
   return (
     <div className="row">

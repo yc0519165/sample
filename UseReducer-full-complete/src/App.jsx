@@ -10,8 +10,6 @@ import
 
 function App (){
 
-  
-
   return( 
     <TodoItemsContexProvider>
   <center>

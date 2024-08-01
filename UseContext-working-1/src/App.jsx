@@ -33,10 +33,10 @@ function App (){
     }}>
   <center>
     <AppName></AppName>
-    <AddTodo handleNemItem={handleNemItem}></AddTodo>
-    <WelcomeMessage></WelcomeMessage>
+    <AddTodo ></AddTodo>
+    <WelcomeMessage ></WelcomeMessage>
     <TodoItems 
-    onDeleteClick={handleDeleteItem}></TodoItems>
+    ></TodoItems>
   </center>
   </TodoListContext.Provider>
   )

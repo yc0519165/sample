@@ -1,10 +1,10 @@
-import { useContext } from "react"
-import { TodoListContext } from "../store/todo-item-store"
+import { useContext } from "react";
+import { TodoListContext } from "../store/todo-item-store";
 
 const WelcomeMessage =() =>{
-  const todoItems = useContext(TodoListContext)
+  const { todoItems } = useContext(TodoListContext)
   return (
     todoItems.length === 0 && <p>Enjoy your day <b>...</b></p>
   )
 }
-export default WelcomeMessage
+export default WelcomeMessage;

@@ -9,7 +9,7 @@ const TodoItems = () => {
 // If you can add the shortcut**
   // const contexObj = useContext(TodoItemsContex)
   // const todoItems = contexObj.todoItems
-
+ 
   
 
 
